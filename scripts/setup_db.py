@@ -18,7 +18,7 @@ DB_PORT = os.getenv("POSTGRES_PORT", "5432")
 # Ingest and archive file paths
 INGEST_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), "../csv_files/ingest/"))
 ARCHIVE_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), "../csv_files/archive/"))
-OUTPUT_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__), "../frontend/assets/data/processed.json"))
+OUTPUT_JSON = os.path.abspath(os.path.join(os.path.dirname(__file__), "../assets/data/processed.json"))
 
 # Performances table name
 TABLE_NAME = "performances"
