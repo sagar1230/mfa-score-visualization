@@ -1,0 +1,58 @@
+body {
+    font-family: "Avenir";
+}
+
+#main {
+    margin: 50px 50px;
+}
+
+.selector {
+    font-family: "Avenir";
+    font-size: 16px;
+}
+
+.chart-title {
+    font-family: "Avenir";
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#details {
+    position: absolute;
+    top: 115px;
+    left: 975px;
+}
+
+.details-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Avenir, sans-serif;
+}
+.details-table th {
+    padding: 8px;
+    font-weight: 500;
+}
+.details-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.details-table td:nth-child(1) {
+    background-color: #ffffff; /* Change this to your preferred highlight color */
+    width: 225px;
+    height: 22px;
+    text-align: left;
+    font-weight: 550;
+}
+.details-table td:nth-child(2) {
+    background-color: #ffffff; /* Change this to your preferred highlight color */
+    width: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+.details-table td:nth-child(3) {
+    background-color: #ffffff; /* Change this to your preferred highlight color */
+    width: 50px;
+    text-align: center;
+    font-weight: normal;
+}

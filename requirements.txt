@@ -1,0 +1,12 @@
+# Database
+psycopg2  # PostgreSQL connection for Python
+
+# Data Processing
+pandas  # For handling CSV and data processing
+numpy  # For numerical operations
+
+# Environment Variables
+python-dotenv  # To load environment variables from .env
+
+# Miscellaneous
+shutil  # Built-in, no need to install, used for file handling

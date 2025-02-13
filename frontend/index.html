@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="assets/shield_vector.svg">
+</head>
+<body>
+    <div id="main">
+        <h1 id="chartTitle" class="chart-title" style="">Music For All Competition Data Explorer</h1>
+        <div id="filters" style="margin-bottom: 20px;">
+              <select id="yearSelect" class="selector" style="display: inline-block; width: 58px; height: 27px;"></select>
+              <select id="competitionSelect" class="selector" style="display: inline-block; width: 540px; height: 27px;"></select>
+              <select id="roundSelect" class="selector" style="display: inline-block; width: 94px; height: 27px;"></select>
+            </div>
+        <svg width="830" height="510">
+        </svg>
+        <div>
+            <label for="xAxisSelect" style="font-weight: 500; display: inline-block; width: 102px;">X-Axis Metric:</label>
+            <select class="selector" id="xAxisSelect" style="display: inline-block; width: 235px; height: 27px;" onchange="updatexAxis()">
+                <option selected value="xAxisMusicPerformanceIndividual">Music Performance Individual</option>
+                <option value="xAxisMusicPerformanceEnsemble">Music Performance Ensemble</option>
+                <option value="xAxisMusicPerformanceAverage">Music Performance Average</option>
+                <option value="xAxisVisualPerformanceIndividual">Visual Performance Individual</option>
+                <option value="xAxisVisualPerformanceEnsemble">Visual Performance Ensemble</option>
+                <option value="xAxisVisualPerformanceAverage">Visual Performance Average</option>
+                <option value="xAxisGeneralEffectMusic1">General Effect Music 1</option>
+                <option value="xAxisGeneralEffectMusic2">General Effect Music 2</option>
+                <option value="xAxisGeneralEffectMusicTotal">General Effect Music Total</option>
+                <option value="xAxisGeneralEffectVisual">General Effect Visual</option>
+                <option value="xAxisGeneralEffectTotal">General Effect Total</option>
+                <option value="xAxisTotal">Total</option>
+            </select>
+            <label style="font-weight: 500;">&nbsp;</label>
+            <label class="finalist-key" style="font-weight: 500; color: #DF3128">&nbsp;&nbsp;Finalist&nbsp;</label>
+            <label class="semifinalist-key" style="font-weight: 500; color: #0974C4">&nbsp;&nbsp;Semifinalist&nbsp;</label>
+            <label class="prelimist-key" style="font-weight: 500; color: #6CBE69">&nbsp;&nbsp;Prelimist&nbsp;</label>
+            <label style="font-weight: 500;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label id="competitionInfo" class="competition-key" style="font-weight: 500; color: #777777;">&nbsp;&nbsp;Competition Details</label>
+        </div>
+        <label for="yAxisSelect" style="font-weight: 500; display: inline-block; width: 102px;  margin-top: 10px;">Y-Axis Metric:</label>
+            <select class="selector" id="yAxisSelect" style="display: inline-block; width: 235px; height: 27px;" onchange="updateyAxis()">
+                <option value="yAxisMusicPerformanceIndividual">Music Performance Individual</option>
+                <option value="yAxisMusicPerformanceEnsemble">Music Performance Ensemble</option>
+                <option value="yAxisMusicPerformanceAverage">Music Performance Average</option>
+                <option value="yAxisVisualPerformanceIndividual">Visual Performance Individual</option>
+                <option value="yAxisVisualPerformanceEnsemble">Visual Performance Ensemble</option>
+                <option value="yAxisVisualPerformanceAverage">Visual Performance Average</option>
+                <option value="yAxisGeneralEffectMusic1">General Effect Music 1</option>
+                <option value="yAxisGeneralEffectMusic2">General Effect Music 2</option>
+                <option value="yAxisGeneralEffectMusicTotal">General Effect Music Total</option>
+                <option value="yAxisGeneralEffectVisual">General Effect Visual</option>
+                <option value="yAxisGeneralEffectTotal">General Effect Total</option>
+                <option selected value="yAxisTotal">Total</option>
+            </select>
+        <div id="searchContainer" style="margin-top: 10px;">
+          <label for="highSchoolSearch" style="font-weight: 500; display: inline-block; width: 102px;">High School:</label>
+          <input type="text" class="selector" id="highSchoolSearch" style="display: inline-block; width: 227px; height: 21px;" placeholder="Search" list="highSchoolSuggestions" />
+          <datalist id="highSchoolSuggestions"></datalist>
+        </div>
+        <a href="https://sites.google.com/ccboe.net/lakeside-bands/home" style="font-weight: 500; display: inline-block; margin-top: 20px; color: #862B44; text-decoration: none;">@Lakeside.Bands&nbsp;
+        </a>
+        <div id="details">
+              <table class="details-table">
+                <thead>
+                <tr>
+                  <th style="text-align: left;">Category</th>
+                  <th>Z</th>
+                  <th>Rank</th>
+                </tr>
+              </thead>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><strong></strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./visualization.js"></script>
+</html>
